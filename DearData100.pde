@@ -1,10 +1,17 @@
+// unlock reasons will be categorised into groups first and declared as named constants so i know what is being 
+// represented in the array. final means the value cant be changed once assigned.
+final int messaging = 0; // this includes messages, whatsapp, discord
+final int social_media = 1; // this includes snapchat, instagram and tiktok
+final int productivity = 2; // this includes alarm, phone, maps, deliveroo, safari
+final int entertainment = 3; // this includes spotify, reading, minecraft, clash royal, roblox
 
-int[] unlockReasons = { //array to hold data points
+// change this later so it takes the data from my excel file, and creates an array according to the file.
+int[] unlockReasons = { //array to hold data categories
   0, 1, 0, 2, 3,
   1, 0, 4, 2, 1,
   0, 3, 1, 2, 0,
   4, 1, 0, 3, 2
-}; // these numbers will represent different categories, change this once ive got all data collected
+}; // these numbers will represent the different categories
 
 void setup() {
   size(600, 400);
